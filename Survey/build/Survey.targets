@@ -26,5 +26,5 @@
       DestinationFiles="@(SurveyViewsFiles->'$(MSBuildProjectDirectory)\Views\%(RecursiveDir)%(Filename)%(Extension)')"
       SkipUnchangedFiles="true" />
   </Target>
-  
+
 </Project>

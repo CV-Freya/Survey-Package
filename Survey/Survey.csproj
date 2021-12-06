@@ -1,20 +1,20 @@
-﻿
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <Version>1.0.0</Version>
     <InformationalVersion>1.0.0</InformationalVersion>
     <TargetFramework>net5.0</TargetFramework>
-    <Authors>Freya Shah</Authors>
+    <Authors>Paul Seal</Authors>
     <ContentTargetFolders>.</ContentTargetFolders>
     <Product>Survey</Product>
     <PackageId>Survey</PackageId>
     <Title>Survey</Title>
-    <Description>Survey Package for Umbraco 9</Description>
-    <PackageProjectUrl>https://github.com/prjseal/clean-Starter-Kit-for-Umbraco-v9</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/prjseal/clean-Starter-Kit-for-Umbraco-v9/blob/master/images/logo.png?raw=true</PackageIconUrl>
-    <RepositoryUrl>https://github.com/prjseal/clean-Starter-Kit-for-Umbraco-v9</RepositoryUrl>
+    <Description>Survey Package for Umbraco</Description>
+    <PackageProjectUrl>https://github.com/CV-Freya/Survey-Package</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageIconUrl>https://github.com/CV-Freya/Survey-Package/blob/main/images/logo.png?raw=true</PackageIconUrl> 
+    <RepositoryUrl>https://github.com/CV-Freya/Survey-Package</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
@@ -25,12 +25,12 @@
       <PackagePath>buildTransitive</PackagePath>
     </None>
 
-    <Content Include="wwwroot\clean-assets\**\*.*">
+    <Content Include="wwwroot\SurveyAssests\**\*.*">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </Content>
 
-    <None Remove="Views\Components\Contact\default.cshtml" />
+    <None Remove="Views\Partials\blocklist\default.cshtml" />
 
     <Content Include="Views\**\*.*">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
@@ -46,5 +46,8 @@
     <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="../images/logo.png" Pack="true" PackPath="\" />
+  </ItemGroup>
 
 </Project>
