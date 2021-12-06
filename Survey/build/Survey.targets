@@ -20,7 +20,7 @@
     <ItemGroup>
       <SurveyViewsFiles Include="$(SurveyViewsFilePath)" />
     </ItemGroup>
-    <Message Text="Copying Survey Views files: $(SurveyViewsFiles) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
+    <Message Text="Copying Survey Views files: $(SurveyViewsFilePath) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
     <Copy
       SourceFiles="@(SurveyViewsFiles)"
       DestinationFiles="@(SurveyViewsFiles->'$(MSBuildProjectDirectory)\Views\%(RecursiveDir)%(Filename)%(Extension)')"
