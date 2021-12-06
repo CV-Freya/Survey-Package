@@ -5,7 +5,7 @@
     <Version>1.0.0</Version>
     <InformationalVersion>1.0.0</InformationalVersion>
     <TargetFramework>net5.0</TargetFramework>
-    <Authors>Paul Seal</Authors>
+    <Authors>CV Freya Shah</Authors>
     <ContentTargetFolders>.</ContentTargetFolders>
     <Product>Survey</Product>
     <PackageId>Survey</PackageId>
@@ -44,6 +44,7 @@
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.1.1" />
+    <PackageReference Include="Survey.Core" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

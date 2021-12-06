@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Version>1.0.0</Version>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>CV Freya Shah</Authors>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>Survey.Core</Product>
+    <PackageId>Survey.Core</PackageId>
+    <Title>Survey.Core</Title>
+    <Description>Core Library for the Survey Kit for Umbraco</Description>
+    <PackageTags>umbraco plugin package Survey Kit core library</PackageTags>
+    <PackageProjectUrl>https://github.com/CV-Freya/Survey-Package</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageIconUrl>https://github.com/CV-Freya/Survey-Package/blob/main/images/logo.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/CV-Freya/Survey-Package</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../images/logo.png" Pack="true" PackPath="\" />
+  </ItemGroup>
+
+</Project>
