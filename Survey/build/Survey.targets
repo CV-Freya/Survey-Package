@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <SurveyAssetsFilePath>$(MSBuildThisFileDirectory)..\wwwroot\SurveyAssets\**\*.*</SurveyAssetsFilePath>
-    <SurveyViewsFilePath>$(MSBuildThisFileDirectory)..\Views\**\*.*</SurveyViewsFilePath>
+    <SurveyViewsFilePath>$(MSBuildThisFileDirectory)..\Views\Shared\Components\Survey\**\*.*</SurveyViewsFilePath>
   </PropertyGroup>
 
   <Target Name="CopySurveyAssets" BeforeTargets="Build">
     <ItemGroup>
       <SurveyAssetFiles Include="$(SurveyAssetsFilePath)" />
     </ItemGroup>
-    <Message Text="Copying Survey Asset files: $(SurveyAssetsFilePath) - #@(SurveyAssetFiles->Count()) files"  Importance="high" />
+    <Message Text="Survey Asset files: $(SurveyAssetsFilePath) - #@(SurveyAssetFiles->Count()) files"  Importance="high" />
     <Copy
         SourceFiles="@(SurveyAssetFiles)"
         DestinationFiles="@(SurveyAssetFiles->'$(MSBuildProjectDirectory)\wwwroot\SurveyAssets\%(RecursiveDir)%(Filename)%(Extension)')"
@@ -20,7 +20,7 @@
     <ItemGroup>
       <SurveyViewsFiles Include="$(SurveyViewsFilePath)" />
     </ItemGroup>
-    <Message Text="Copying Survey Views files: $(SurveyViewsFilePath) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
+    <Message Text="Copying Survey Views files: $(SurveyViewsFiles) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
     <Copy
       SourceFiles="@(SurveyViewsFiles)"
       DestinationFiles="@(SurveyViewsFiles->'$(MSBuildProjectDirectory)\Views\%(RecursiveDir)%(Filename)%(Extension)')"
