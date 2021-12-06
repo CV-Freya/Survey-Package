@@ -9,7 +9,7 @@
     <ItemGroup>
       <SurveyAssetFiles Include="$(SurveyAssetsFilePath)" />
     </ItemGroup>
-    <Message Text="Copying Survey Asset files: $(SurveyAssetFilesPath) - #@(SurveyAssetFiles->Count()) files"  Importance="high" />
+    <Message Text="Copying Survey Asset files: $(SurveyAssetsFilePath) - #@(SurveyAssetFiles->Count()) files"  Importance="high" />
     <Copy
         SourceFiles="@(SurveyAssetFiles)"
         DestinationFiles="@(SurveyAssetFiles->'$(MSBuildProjectDirectory)\wwwroot\SurveyAssets\%(RecursiveDir)%(Filename)%(Extension)')"
@@ -20,7 +20,7 @@
     <ItemGroup>
       <SurveyViewsFiles Include="$(SurveyViewsFilePath)" />
     </ItemGroup>
-    <Message Text="Copying Survey Views files: $(SurveyViewsFilesPath) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
+    <Message Text="Copying Survey Views files: $(SurveyViewsFilePath) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
     <Copy
       SourceFiles="@(SurveyViewsFiles)"
       DestinationFiles="@(SurveyViewsFiles->'$(MSBuildProjectDirectory)\Views\%(RecursiveDir)%(Filename)%(Extension)')"
