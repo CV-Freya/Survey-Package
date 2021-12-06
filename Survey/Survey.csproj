@@ -1,0 +1,50 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <Version>1.0.0</Version>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Freya Shah</Authors>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>Survey</Product>
+    <PackageId>Survey</PackageId>
+    <Title>Survey</Title>
+    <Description>Survey Package for Umbraco 9</Description>
+    <PackageProjectUrl>https://github.com/prjseal/clean-Starter-Kit-for-Umbraco-v9</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/prjseal/clean-Starter-Kit-for-Umbraco-v9/blob/master/images/logo.png?raw=true</PackageIconUrl>
+    <RepositoryUrl>https://github.com/prjseal/clean-Starter-Kit-for-Umbraco-v9</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="build\**\*.*">
+      <Pack>True</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+
+    <Content Include="wwwroot\clean-assets\**\*.*">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <None Remove="Views\Components\Contact\default.cshtml" />
+
+    <Content Include="Views\**\*.*">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+
+    <None Remove="Migrations\package.zip" />
+    <EmbeddedResource Include="Migrations\package.zip" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.1.1" />
+  </ItemGroup>
+
+
+</Project>

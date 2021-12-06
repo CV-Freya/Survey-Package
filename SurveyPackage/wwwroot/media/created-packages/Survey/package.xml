@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>Survey</name>
+    </package>
+  </info>
+  <Documents>
+    <DocumentSet importMode="root">
+      <home id="1059" key="fef1cece-ecb0-4ab5-a91d-c69186af7be1" parentID="-1" level="1" creatorID="-1" sortOrder="0" createDate="2021-12-06T11:30:36" updateDate="2021-12-06T11:30:36" nodeName="Home" urlName="home" path="-1,1059" isDoc="" nodeType="1056" nodeTypeAlias="home" creatorName="freya" writerName="freya" writerID="-1" template="1055" isPublished="true">
+        <title><![CDATA[Take a Survey]]></title>
+        <subtitle><![CDATA[Which of the following words would you use to describe our product]]></subtitle>
+        <categoriesList><![CDATA[[{"key":"6cf18b3b-3bf9-41b1-8cce-277f6445afff","name":"Item 1","ncContentTypeAlias":"categoriesList","PropType":null,"title":"High-Quality"},{"key":"b4551bd3-a85a-4a66-8e93-04aadd153b0b","name":"Item 2","ncContentTypeAlias":"categoriesList","PropType":null,"title":"Useful"},{"key":"26eb3d20-c5f9-4e49-94e1-fc62f187c0b4","name":"Item 3","ncContentTypeAlias":"categoriesList","PropType":null,"title":"Good Value for Money"},{"key":"4132847a-9b05-4bb9-b15f-ed025108fa58","name":"Item 4","ncContentTypeAlias":"categoriesList","PropType":null,"title":"Ineffective"},{"key":"10bec7e3-6a3c-42c7-b0ce-1b33ccbf59e7","name":"Item 5","ncContentTypeAlias":"categoriesList","PropType":null,"title":"Poor-Quality"}]]]></categoriesList>
+        <response id="1063" key="328d4790-f0d3-42f4-b21b-6ffe6f6bcf56" parentID="1059" level="2" creatorID="-1" sortOrder="0" createDate="2021-12-06T11:46:55" updateDate="2021-12-06T11:46:55" nodeName="Response" urlName="response" path="-1,1059,1063" isDoc="" nodeType="1061" nodeTypeAlias="response" creatorName="freya" writerName="freya" writerID="-1" template="" isPublished="true">
+          <title><![CDATA[Survey]]></title>
+          <responseItem id="1064" key="cdc2c2cf-1303-4061-9fd3-77f4c5b447f1" parentID="1063" level="3" creatorID="-1" sortOrder="0" createDate="2021-12-06T12:12:32" updateDate="2021-12-06T12:12:32" nodeName="Poor-Quality" urlName="poor-quality" path="-1,1059,1063,1064" isDoc="" nodeType="1062" nodeTypeAlias="responseItem" creatorName="freya" writerName="freya" writerID="-1" template="" isPublished="true">
+            <response><![CDATA[Poor-Quality]]></response>
+          </responseItem>
+        </response>
+      </home>
+    </DocumentSet>
+  </Documents>
+  <DocumentTypes>
+    <DocumentType>
+      <Info>
+        <Name>Categories List</Name>
+        <Alias>categoriesList</Alias>
+        <Key>15173b3a-057a-4a6c-8224-f284ebd4b94a</Key>
+        <Icon>icon-science</Icon>
+        <Thumbnail>folder.png</Thumbnail>
+        <Description />
+        <AllowAtRoot>False</AllowAtRoot>
+        <IsListView>False</IsListView>
+        <IsElement>True</IsElement>
+        <Variations>Nothing</Variations>
+        <Compositions />
+        <AllowedTemplates />
+        <DefaultTemplate></DefaultTemplate>
+      </Info>
+      <Structure />
+      <GenericProperties>
+        <GenericProperty>
+          <Name>Title</Name>
+          <Alias>title</Alias>
+          <Key>988641b6-682c-41db-918b-7eadfa0fde57</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="details">Details</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+      </GenericProperties>
+      <Tabs>
+        <Tab>
+          <Id>57</Id>
+          <Key>8ae12da7-f5fb-485f-b8e0-355437148504</Key>
+          <Type>Group</Type>
+          <Caption>Details</Caption>
+          <Alias>details</Alias>
+          <SortOrder>0</SortOrder>
+        </Tab>
+      </Tabs>
+    </DocumentType>
+    <DocumentType>
+      <Info>
+        <Name>Home</Name>
+        <Alias>home</Alias>
+        <Key>2d6edd09-a65a-4b6a-9582-d1f5fdfc2474</Key>
+        <Icon>icon-document</Icon>
+        <Thumbnail>folder.png</Thumbnail>
+        <Description />
+        <AllowAtRoot>True</AllowAtRoot>
+        <IsListView>False</IsListView>
+        <IsElement>False</IsElement>
+        <Variations>Nothing</Variations>
+        <Compositions />
+        <AllowedTemplates>
+          <Template>Home</Template>
+        </AllowedTemplates>
+        <DefaultTemplate>Home</DefaultTemplate>
+      </Info>
+      <Structure>
+        <DocumentType>response</DocumentType>
+      </Structure>
+      <GenericProperties>
+        <GenericProperty>
+          <Name>Title</Name>
+          <Alias>title</Alias>
+          <Key>9915eef4-30a5-4ed6-b82e-f5655a4126b2</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="content">Content</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+        <GenericProperty>
+          <Name>Subtitle</Name>
+          <Alias>subtitle</Alias>
+          <Key>e3e445a3-7f7e-4f7b-8048-d1ad4067a580</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="content">Content</Tab>
+          <SortOrder>1</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+        <GenericProperty>
+          <Name>CategoriesList</Name>
+          <Alias>categoriesList</Alias>
+          <Key>4c4964e8-bbc7-4dee-9ae1-27261891b163</Key>
+          <Type>Umbraco.NestedContent</Type>
+          <Definition>b2eba257-542d-4711-bc70-924e01912aa4</Definition>
+          <Tab Alias="content">Content</Tab>
+          <SortOrder>2</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+      </GenericProperties>
+      <Tabs>
+        <Tab>
+          <Id>56</Id>
+          <Key>46b95371-47c8-4814-9bab-caabe010a47c</Key>
+          <Type>Group</Type>
+          <Caption>Content</Caption>
+          <Alias>content</Alias>
+          <SortOrder>0</SortOrder>
+        </Tab>
+      </Tabs>
+    </DocumentType>
+    <DocumentType>
+      <Info>
+        <Name>Response</Name>
+        <Alias>response</Alias>
+        <Key>2fafc553-b2d2-464a-bec6-8bb7d96d1592</Key>
+        <Icon>icon-item-arrangement</Icon>
+        <Thumbnail>folder.png</Thumbnail>
+        <Description />
+        <AllowAtRoot>False</AllowAtRoot>
+        <IsListView>True</IsListView>
+        <IsElement>False</IsElement>
+        <Variations>Nothing</Variations>
+        <Compositions />
+        <AllowedTemplates />
+        <DefaultTemplate></DefaultTemplate>
+      </Info>
+      <Structure>
+        <DocumentType>responseItem</DocumentType>
+      </Structure>
+      <GenericProperties>
+        <GenericProperty>
+          <Name>Title</Name>
+          <Alias>title</Alias>
+          <Key>57008a1f-b55c-4e07-8461-fe1a74a8f00f</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="details">Details</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+        <GenericProperty>
+          <Name>Responses</Name>
+          <Alias>responses</Alias>
+          <Key>73dca2e2-5312-4ea8-9879-7c6cbfa467e3</Key>
+          <Type>Umbraco.ContentPicker</Type>
+          <Definition>fd1e0da5-5606-4862-b679-5d0cf3a52a59</Definition>
+          <Tab Alias="details">Details</Tab>
+          <SortOrder>1</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+      </GenericProperties>
+      <Tabs>
+        <Tab>
+          <Id>58</Id>
+          <Key>f8b4ef51-8569-42ac-86bb-a999fca5c369</Key>
+          <Type>Group</Type>
+          <Caption>Details</Caption>
+          <Alias>details</Alias>
+          <SortOrder>0</SortOrder>
+        </Tab>
+      </Tabs>
+    </DocumentType>
+    <DocumentType>
+      <Info>
+        <Name>Response Item</Name>
+        <Alias>responseItem</Alias>
+        <Key>d4fe2c8a-fb56-46c2-9b87-6d5bf73d8686</Key>
+        <Icon>icon-item-arrangement</Icon>
+        <Thumbnail>folder.png</Thumbnail>
+        <Description />
+        <AllowAtRoot>False</AllowAtRoot>
+        <IsListView>False</IsListView>
+        <IsElement>False</IsElement>
+        <Variations>Nothing</Variations>
+        <Compositions />
+        <AllowedTemplates />
+        <DefaultTemplate></DefaultTemplate>
+      </Info>
+      <Structure />
+      <GenericProperties>
+        <GenericProperty>
+          <Name>Response</Name>
+          <Alias>response</Alias>
+          <Key>80e282cf-7121-4738-b1e9-98accd8e4b1c</Key>
+          <Type>Umbraco.TextBox</Type>
+          <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+          <Tab Alias="details">Details</Tab>
+          <SortOrder>0</SortOrder>
+          <Mandatory>False</Mandatory>
+          <LabelOnTop>False</LabelOnTop>
+          <Variations>Nothing</Variations>
+        </GenericProperty>
+      </GenericProperties>
+      <Tabs>
+        <Tab>
+          <Id>59</Id>
+          <Key>80da1ad3-d94f-42ae-a595-890b53c0cdc9</Key>
+          <Type>Group</Type>
+          <Caption>Details</Caption>
+          <Alias>details</Alias>
+          <SortOrder>0</SortOrder>
+        </Tab>
+      </Tabs>
+    </DocumentType>
+  </DocumentTypes>
+  <MediaTypes />
+  <Templates>
+    <Template>
+      <Name>Home</Name>
+      <Key>b18effbc-2616-40e1-83b5-cafbc9f4ab10</Key>
+      <Alias>Home</Alias>
+      <Design><![CDATA[@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+}
+@{
+    var title = Model.Value<string>("title");
+    var Subtitle = Model.Value<string>("subtitle");
+    var categoriesList = Model.Value<IEnumerable<IPublishedElement>>("categoriesList");
+}
+<h1>@title</h1>
+<h3>@Subtitle</h3>
+@await Component.InvokeAsync("Survey", new { list = categoriesList })]]></Design>
+    </Template>
+    <Template>
+      <Name>Master</Name>
+      <Key>751ccfae-fca5-4ece-9be0-e3fa9803a313</Key>
+      <Alias>Master</Alias>
+      <Design><![CDATA[@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<html lang="en">
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="~/SurveyAssets/survey.css" />
+</head>
+<body>
+    @RenderBody()
+</body>]]></Design>
+    </Template>
+  </Templates>
+  <Stylesheets />
+  <Scripts />
+  <PartialViews />
+  <Macros />
+  <MacroPartialViews />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes>
+    <DataType Name="Home - CategoriesList - Nested Content" Id="Umbraco.NestedContent" Definition="b2eba257-542d-4711-bc70-924e01912aa4" DatabaseType="Ntext" Configuration="{&quot;contentTypes&quot;:[{&quot;ncAlias&quot;:&quot;categoriesList&quot;,&quot;ncTabAlias&quot;:&quot;Details&quot;,&quot;nameTemplate&quot;:&quot;&quot;}],&quot;confirmDeletes&quot;:true,&quot;showIcons&quot;:true,&quot;hideLabel&quot;:false}" />
+    <DataType Name="Content Picker" Id="Umbraco.ContentPicker" Definition="fd1e0da5-5606-4862-b679-5d0cf3a52a59" DatabaseType="Nvarchar" Configuration="{&quot;showOpenButton&quot;:false,&quot;startNodeId&quot;:null,&quot;ignoreUserStartNodes&quot;:false}" />
+    <DataType Name="Textstring" Id="Umbraco.TextBox" Definition="0cc0eba1-9960-42c9-bf9b-60e150b429ae" DatabaseType="Nvarchar" Configuration="{}" />
+  </DataTypes>
+  <MediaItems />
+</umbPackage>

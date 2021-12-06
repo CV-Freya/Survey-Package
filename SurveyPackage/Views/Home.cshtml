@@ -1,0 +1,14 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+}
+@{
+    var title = Model.Value<string>("title");
+    var Subtitle = Model.Value<string>("subtitle");
+    var categoriesList = Model.Value<IEnumerable<IPublishedElement>>("categoriesList");
+}
+<h1>@title</h1>
+<h3>@Subtitle</h3>
+@await Component.InvokeAsync("Survey", new { list = categoriesList })

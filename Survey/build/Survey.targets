@@ -1,0 +1,30 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <SurveyAssetsFilePath>$(MSBuildThisFileDirectory)..\wwwroot\SurveyAssets\**\*.*</SurveyAssetsFilePath>
+    <SurveyViewsFilePath>$(MSBuildThisFileDirectory)..\Views\**\*.*</SurveyViewsFilePath>
+  </PropertyGroup>
+
+  <Target Name="CopySurveyAssets" BeforeTargets="Build">
+    <ItemGroup>
+      <SurveyAssetFiles Include="$(SurveyAssetsFilePath)" />
+    </ItemGroup>
+    <Message Text="Copying Survey Asset files: $(SurveyAssetFilesPath) - #@(SurveyAssetFiles->Count()) files"  Importance="high" />
+    <Copy
+        SourceFiles="@(SurveyAssetFiles)"
+        DestinationFiles="@(SurveyAssetFiles->'$(MSBuildProjectDirectory)\wwwroot\SurveyAssets\%(RecursiveDir)%(Filename)%(Extension)')"
+        SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="CopySurveyViews" BeforeTargets="Build">
+    <ItemGroup>
+      <SurveyViewsFiles Include="$(SurveyViewsFilePath)" />
+    </ItemGroup>
+    <Message Text="Copying Survey Views files: $(SurveyViewsFilesPath) - #@(SurveyViewsFiles->Count()) files"  Importance="high" />
+    <Copy
+      SourceFiles="@(SurveyViewsFiles)"
+      DestinationFiles="@(SurveyViewsFiles->'$(MSBuildProjectDirectory)\Views\%(RecursiveDir)%(Filename)%(Extension)')"
+      SkipUnchangedFiles="true" />
+  </Target>
+  
+</Project>
